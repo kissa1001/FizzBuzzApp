@@ -18,13 +18,14 @@
 	}
 } 
 	};	
-if(isNaN(convertNumber)){
+if(isNaN(userAnswer)){
 	prompt("Please enter a number only!");
 }
-else if(xNumber % 1 !== 0)
+else if(userAnswer % 1 !== 0)
 {
 	prompt("Please enter a whole number only!");
 }
 else{
 FizzBuzz(userAnswer);
 };
+
