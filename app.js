@@ -1,5 +1,8 @@
-
-for(i=1; i<=100; i++) {
+	var userAnswer=prompt('Enter a number below!');
+var xNumber = parseInt(userAnswer);
+	var FizzBuzz = function (x){
+		x = + userAnswer;
+		for(i=1; i<= x; i++) {
 	if (i % 3 === 0 && i % 5 === 0) {
         console.log("fizzbuzz");
 	}
@@ -13,3 +16,7 @@ for(i=1; i<=100; i++) {
 		console.log(i);
 	}
 } 
+	}	
+
+FizzBuzz(userAnswer);
+
