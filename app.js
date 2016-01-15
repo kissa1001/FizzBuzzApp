@@ -1,9 +1,6 @@
-	var userAnswer=prompt('Enter a number below!');
 
-	var FizzBuzz = function (x){
-		var convertNumber = +userAnswer;
-		var xNumber = parseInt(userAnswer);
-		for(i=1; i<= xNumber; i++) {
+	var FizzBuzz = function (number){
+		for(i=1; i<= number; i++) {
 	if (i % 3 === 0 && i % 5 === 0) {
         console.log("fizzbuzz");
 	}
@@ -18,14 +15,12 @@
 	}
 } 
 	};	
-if(isNaN(userAnswer)){
-	prompt("Please enter a number only!");
-}
-else if(userAnswer % 1 !== 0)
-{
-	prompt("Please enter a whole number only!");
-}
-else{
-FizzBuzz(userAnswer);
+var userAnswer=prompt('Enter a number below!');
+while( isNaN(userAnswer) || userAnswer % 1 != 0){
+	userAnswer=prompt('Please enter a whole number');
 };
+userAnswer = Number(userAnswer);
+
+FizzBuzz(userAnswer);
+
 
